@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './phases.css';
 
 export const metadata: Metadata = {
   title: 'Missão na Horta | Jogo de Ciências',

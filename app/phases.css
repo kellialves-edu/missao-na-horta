@@ -1,0 +1,15 @@
+.map-card{text-align:center;padding:clamp(28px,6vw,50px);width:min(760px,100%)}
+.map-card h1{font-size:clamp(30px,5vw,46px)}
+.phase-path{display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,4vw,38px);margin:30px 0 34px;position:relative}
+.phase-path:before{content:"";position:absolute;top:25px;left:18%;right:18%;height:4px;background:#dce5d6;z-index:-1}
+.phase-node{display:flex;flex-direction:column;align-items:center;gap:9px;width:145px;color:#708075;font-weight:900}
+.phase-node b{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#dce3d9;color:#fff;font-size:25px;border:5px solid #fff;box-shadow:0 4px 12px #59704d33}
+.phase-node small{display:block;margin-top:3px;font-size:11px;font-weight:700}
+.phase-node.active{color:#285b3c}.phase-node.locked{opacity:.58}
+.phase-ribbon{display:flex;align-items:center;gap:10px;margin-bottom:14px;border-left:5px solid;padding:8px 12px;background:#ffffffa8;border-radius:10px}
+.phase-ribbon>span{font-size:25px}.phase-ribbon small,.phase-ribbon strong{display:block}
+.phase-ribbon small{font-size:10px;text-transform:uppercase;color:#718078;font-weight:900;letter-spacing:.08em}.phase-ribbon strong{font-size:15px;color:#345442}
+.badge-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.badge-row span{background:#edf5e8;border:1px solid #d5e4cd;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:800;color:#4d6954}
+.difficulty{display:inline-block;background:#fff5d8;border:1px solid #ead18a;color:#725819;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700}
+@media(max-width:600px){.phase-path{gap:4px}.phase-node{width:31%;font-size:12px}.phase-node b{width:47px;height:47px}.phase-path:before{top:22px;left:16%;right:16%}}

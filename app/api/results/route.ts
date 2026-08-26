@@ -27,7 +27,7 @@ export async function POST(request: Request) {
   const name = String(body.name || '').trim().slice(0, 40);
   const score = Number(body.score);
   const total = Number(body.total);
-  if (!name || !Number.isInteger(score) || !Number.isInteger(total) || score < 0 || score > total || total > 20) {
+  if (!name || !Number.isInteger(score) || !Number.isInteger(total) || score < 0 || score > total || total > 50) {
     return NextResponse.json({ error: 'Dados inválidos.' }, { status: 400 });
   }
   await env.DB.prepare('INSERT INTO results (name, score, total, answers_json, created_at) VALUES (?, ?, ?, ?, ?)')
